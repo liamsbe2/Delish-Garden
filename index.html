@@ -744,6 +744,26 @@
       .menu-grid { grid-template-columns: 1fr; }
       .hero-logo-outer { width: 150px; height: 150px; }
       .hero-logo-wrap { width: 138px; height: 138px; }
+      /* About section: stack columns on mobile */
+      .about-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+      /* Footer: stack columns on mobile */
+      .footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      /* Reservation form padding */
+      .reservation-form-wrap { padding: 1.5rem; }
+      /* Ensure hamburger and nav toggle correctly via CSS too */
+      .desktop-nav { display: none !important; }
+      .mobile-only { display: block !important; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 1rem; }
+      .hero-desc { font-size: 0.88rem; padding: 0 0.25rem; }
+      .hero-tagline { letter-spacing: 0.25em; }
+      .section-title { font-size: clamp(2rem, 8vw, 3rem); }
+      .menu-tab { padding: 0.9rem 1rem; font-size: 0.7rem; }
+      .reservation-form-wrap { padding: 1.2rem; }
+      .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+      .specialty-img-wrap { height: 180px; }
     }
   </style>
 </head>
